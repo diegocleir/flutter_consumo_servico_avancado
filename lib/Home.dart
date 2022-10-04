@@ -116,7 +116,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Consumo de serviço anvançado"),
+        title: Text("Consumo de serviço avançado"),
       ),
       body: Container(
         child: Column(
