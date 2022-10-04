@@ -1,11 +1,20 @@
 class Post{
 
   int _userId;
-  int _id;
+  int? _id;
   String _title;
   String _body;
 
   Post(this._userId, this._id, this._title, this._body);
+
+  Map toJson(){
+    return {
+      'id': this._id,
+      'title': this._title,
+      'body': this._body,
+      'userId': this._userId
+    };
+  }
 
   String get body => _body;
 
@@ -19,9 +28,9 @@ class Post{
     _title = value;
   }
 
-  int get id => _id;
+  int? get id => _id;
 
-  set id(int value) {
+  set id(int? value) {
     _id = value;
   }
 
